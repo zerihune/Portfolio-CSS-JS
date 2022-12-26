@@ -53,4 +53,37 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
   width:100%;
+} 
+.header_text{
+  margin-top:20%;
+  font-size:30px;
+}
+.header_text p{
+   margin-top:20px;
+   font-size:20px;
+}
+.text_purple{
+  color:#ff004f;
+}
+
+/* ABOUT SECTION */
+
+#about{
+  padding: 80px 0;
+  color:white;
+}
+.row{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+.about_col_1{
+flex-basis:35%;
+}
+.about_col_1 img{
+  width:100%;
+  border-radius:25px;
+}
+.about_col_2{
+  flex-basis:60%;
 }
