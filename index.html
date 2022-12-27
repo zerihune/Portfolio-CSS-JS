@@ -2,63 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZEK2 </title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEK2 </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- HEADER SECTION -->
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="./assets/images/logo1.svg" class="logo">
-        <ul>
-          <li><a href="#" class="header_links">Home</a></li>
-          <li><a href="#" class="header_links">About</a></li>
-          <li><a href="#" class="header_links">Services</a></li>
-          <li><a href="#" class="header_links">Portfolios</a></li>
-          <li><a href="#" class="header_links">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header_text">
-        <p>UI/UX Designer && Frontend Deeloper</p>
-        <h1>Hey I'm <span class="text_purple">Zerihun</span> <br>from Ethiopia</h1>
-      </div>
+    <!-- HEADER SECTION -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/images/logo1.svg" class="logo">
+                <ul>
+                    <li><a href="#" class="header_links">Home</a></li>
+                    <li><a href="#" class="header_links">About</a></li>
+                    <li><a href="#" class="header_links">Services</a></li>
+                    <li><a href="#" class="header_links">Portfolios</a></li>
+                    <li><a href="#" class="header_links">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>UI/UX Designer && Frontend Deeloper</p>
+                <h1>Hey I'm <span class="text_purple">Zerihun</span> <br>from Ethiopia</h1>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- ABOUT SCETION -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about_col_1">
-          <img src="./assets/images/user.png" alt="">
+    <!-- ABOUT SCETION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="./assets/images/user.png" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sequi omnis quibusdam ea
+                        voluptatum eligendi sapiente error dignissimos earum, harum perferendis eveniet id quisquam
+                        veniam ab eum cum aliquid aliquam beatae, a, amet tempore
+                        nisi. Hic sapiente quam odio rem maiores nobis tempora provident, quasi, est delectus laudantium
+                        ratione dolorum?</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web and App</li>
+                            <li><span>Web Development</span><br>Developing Web Apps</li>
+                            <li><span>App Development</span><br>Developing Mobile Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experiance">
+                        <ul>
+                            <li><span>2019-2020</span><br>Graphics Designer at Advanced Digital Printing </li>
+                            <li><span>2020-2022</span><br>UI/UX Designer at Girum technologies</li>
+                            <li><span>2018-2019</span><br>Developing Mobile Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2012-2015</span><br>Bsc Degree in Computer Science</li>
+                            <li><span>2018-2019</span><br>Certificate in Graphics Design</li>
+                            <li><span>2018-2020</span><br>Deploma in Video Editing and Cinimatogrpahy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about_col_2">
-          <h1 class="sub_title">About me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sequi omnis quibusdam ea voluptatum eligendi
-            sapiente error dignissimos earum, harum perferendis eveniet id quisquam veniam ab eum cum aliquid aliquam
-            beatae, a, amet tempore nisi. Hic sapiente quam odio rem maiores nobis tempora provident, quasi, est
-            delectus laudantium ratione dolorum?</p>
-          <div class="tab_titles">
-            <p class="tab_links active_link">Skills</p>
-            <p class="tab_links">Experiance</p>
-            <p class="tab_links">Education</p>
-          </div>
-          <div class="tab_contents">
-            <ul>
-              <li><span>UI/UX</span><br>Designing Web and App</li>
-              <li><span>Web Development</span><br>Developing Web Apps</li>
-              <li><span>App Development</span><br>Developing Mobile Apps</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+    <!-- SERVICES -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="service_list">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+    
+        function opentab(tabname) 
+        {
+            for (tablink of tablinks) {
+                tablink.classlist.remove("active_link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classlist.remove("active_tab");
+            }
+            event.currentTarget.classlist.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
 </body>
 
 </html>
