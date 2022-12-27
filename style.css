@@ -154,3 +154,40 @@ nav ul li a:hover::after {
 .tab_contents.active_tab{
    display:block; 
 }
+
+/* SERVICES */
+
+#services{
+  padding: 30px 0;
+}
+.service_list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service_list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight:300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service_list div h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service_list div a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+    display: inline-block;
+}
+.service_list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}

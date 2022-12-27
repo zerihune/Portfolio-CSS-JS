@@ -75,20 +75,39 @@
         </div>
     </div>
     <!-- SERVICES -->
-    <div class="services">
+    <div id="services">
         <div class="container">
             <h1 class="sub_title">My Services</h1>
             <div class="service_list">
-
+                <div class="service_list_box">
+                    <h1>UI/UX Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat architecto officia distinctio veniam earum obcaecati
+                         necessitatibus saepe harum ratione illo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service_list_box">
+                    <h1>Web Development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat architecto officia distinctio veniam earum obcaecati
+                         necessitatibus saepe harum ratione illo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service_list_box">
+                    <h1>Mobile app Development</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugiat architecto officia distinctio veniam earum obcaecati
+                         necessitatibus saepe harum ratione illo.</p>
+                    <a href="#">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
     <script>
         var tablinks = document.getElementsByClassName("tab_links");
         var tabcontents = document.getElementsByClassName("tab_contents");
-    
-        function opentab(tabname) 
-        {
+
+        function opentab(tabname) {
             for (tablink of tablinks) {
                 tablink.classlist.remove("active_link");
             }
