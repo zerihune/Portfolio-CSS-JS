@@ -265,5 +265,8 @@ nav ul li a:hover::after {
 }
 .btn:hover{
     background: #ff004f;
-    transition: height 0.5s;
+    transition: height  0.5s;
 }
+
+/* CONTACT  */
+
