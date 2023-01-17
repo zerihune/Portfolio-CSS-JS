@@ -286,4 +286,5 @@ nav ul li a:hover::after {
     font-size: 30px;
     margin-right: 15px;
     color: #ff004f;
+    display: inline-block;
 }
