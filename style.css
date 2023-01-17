@@ -288,3 +288,17 @@ nav ul li a:hover::after {
     color: #ff004f;
     display: inline-block;
 }
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+}
